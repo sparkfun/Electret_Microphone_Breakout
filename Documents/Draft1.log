@@ -1,0 +1,68 @@
+Circuit: * C:\Users\mary.west\Documents\GitHub\Electret_Microphone_Breakout\Documents\Draft1.asc
+
+Instance "m:u1:22": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:21": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:17": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:16": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:23": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:19": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:18": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:5": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:4": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:3": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:8": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.25
+Gmin = 5.07481e-007
+vernier = 0.125
+vernier = 0.166667
+Gmin = 3.84959e-007
+vernier = 0.222222
+vernier = 0.296296
+Gmin = 2.29249e-007
+vernier = 0.395061
+Gmin = 1.00141e-007
+vernier = 0.526748
+vernier = 0.702331
+Gmin = 2.67047e-008
+vernier = 0.936441
+vernier = 1
+Gmin = 3.72216e-009
+Gmin = 3.99664e-010
+Gmin = 4.29136e-011
+Gmin = 4.60781e-012
+Gmin = 4.9476e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Thu Jan 28 17:43:43 2016
+Total elapsed time: 0.194 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 1094
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 95
+fillins = 158
+solver = Normal
+Matrix Compiler1:     599 opcodes
+Matrix Compiler2: 10.98 KB object code size  2.5/3.9/[2.3]
+
+
