@@ -5662,7 +5662,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 <text x="152.4" y="139.7" size="1.778" layer="91">VCC 3.3V - 5V</text>
 <text x="243.84" y="7.62" size="2.54" layer="94">V.2</text>
-<text x="177.8" y="7.62" size="5.08" layer="94">Mary E West</text>
+<text x="176.53" y="7.62" size="2.54" layer="94">Mary E West</text>
+<text x="173.228" y="11.938" size="2.54" layer="94">Nathan Seidle</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
