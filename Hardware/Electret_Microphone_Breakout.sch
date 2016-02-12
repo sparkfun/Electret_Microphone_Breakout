@@ -7969,6 +7969,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="1" x="-2" y="1.27" drill="0.8" diameter="1.6764"/>
 <pad name="2" x="-2" y="-1.27" drill="0.8" diameter="1.6764"/>
 <text x="-1.386" y="-2.93" size="1.27" layer="21">-</text>
+<text x="-2.54" y="5.08" size="1.016" layer="25">&gt;NAME</text>
+<text x="6.35" y="-2.54" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="MIC_ELECTRET_SMD">
 <circle x="0" y="0" radius="1.626" width="1" layer="29"/>
@@ -8009,8 +8011,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2.54" y1="3.81" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="3.81" x2="5.08" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95">MIC</text>
-<text x="8.128" y="-1.27" size="1.778" layer="96" rot="R90">9.7MM</text>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="8.128" y="-2.032" size="1.778" layer="96" rot="R90">&gt;Value</text>
 <pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
@@ -8019,13 +8021,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <deviceset name="MIC">
 <description>Omni-directional electret microphone. 9.7mm standard diameter.</description>
 <gates>
-<gate name="MIC" symbol="BUZZER" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="BUZZER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="9.7MM" package="MIC-9.7MM">
 <connects>
-<connect gate="MIC" pin="1" pad="1"/>
-<connect gate="MIC" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -8035,8 +8037,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="ELECTRET_SMD" package="MIC_ELECTRET_SMD">
 <connects>
-<connect gate="MIC" pin="1" pad="1"/>
-<connect gate="MIC" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8044,8 +8046,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 <device name="SMD_LESS_PASTE" package="MIC_ELECTRET_SMD_LESS_PASTE">
 <connects>
-<connect gate="MIC" pin="1" pad="1"/>
-<connect gate="MIC" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8145,7 +8147,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="M1" library="SparkFun-Sensors" deviceset="MIC" device="9.7MM"/>
+<part name="MIC" library="SparkFun-Sensors" deviceset="MIC" device="9.7MM" value="9.7MM"/>
 <part name="U1" library="SparkFun-AnalogIC" deviceset="OPA344" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="2.2KOHM-1/10W-1%(0603)" device="" value="2.2k"/>
@@ -8183,7 +8185,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
-<instance part="M1" gate="MIC" x="76.2" y="106.68" smashed="yes" rot="MR270"/>
+<instance part="MIC" gate="&gt;NAME" x="76.2" y="106.68" rot="MR270"/>
 <instance part="U1" gate="G$1" x="127" y="104.14" smashed="yes">
 <attribute name="NAME" x="129.794" y="110.109" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="129.794" y="99.568" size="1.778" layer="96" rot="MR180"/>
@@ -8227,7 +8229,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="86.36" y="106.68"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="M1" gate="MIC" pin="1"/>
+<pinref part="MIC" gate="&gt;NAME" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8261,7 +8263,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="86.36" y1="104.14" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="M1" gate="MIC" pin="2"/>
+<pinref part="MIC" gate="&gt;NAME" pin="2"/>
 </segment>
 </net>
 <net name="VCC" class="0">
